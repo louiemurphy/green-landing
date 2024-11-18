@@ -108,7 +108,7 @@
     <a style={{ cursor: 'pointer' }}>BRANDS</a>
     <ul className="dropdown-content">
       <li>
-        <a href="https://www.facebook.com/greenergysolarph" target="_blank" rel="noopener noreferrer">GREENERGY SOLAR</a>
+        <a href="https://www.greenergysolar.ph/" target="_blank" rel="noopener noreferrer">GREENERGY SOLAR</a>
       </li>
       <li>
         <Link to="/greenergy-mobility">GREENERGY MOBILITY</Link>
@@ -122,15 +122,17 @@
       <li>
         <Link to="/greenergy-industrial">GREENERGY INDUSTRIAL SERVICES</Link>
       </li>
+      <li>
+        <Link to="/greenergy-mobility">SOLAR HUB</Link>
+      </li>
     </ul>
   </li>
-
-                <li className="nav-item">
-                  <a onClick={() => scrollToSection('about')} style={{cursor: 'pointer'}}>ABOUT US</a>
-                </li>
-                <li className="nav-item">
-                  <a onClick={() => scrollToSection('contact')} style={{cursor: 'pointer'}}>CONTACT US</a>
-                </li>
+  <li className="nav-item">
+        <Link to="/about">ABOUT US</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/contact">CONTACT US</Link>
+      </li>
               </ul>
             </nav>
 
@@ -154,8 +156,7 @@
               />
             </div>
             <ul>
-              <li><a onClick={() => { scrollToSection('home'); toggleMobileMenu(); }} style={{cursor: 'pointer'}}>Home</a></li>
-              <li><a onClick={() => { scrollToSection('about'); toggleMobileMenu(); }} style={{cursor: 'pointer'}}>Book An Expert</a></li>
+              <li><a onClick={() => { scrollToSection('about'); toggleMobileMenu(); }} style={{cursor: 'pointer'}}>Testimonials</a></li>
               <li><a onClick={() => { scrollToSection('contact'); toggleMobileMenu(); }} style={{cursor: 'pointer'}}>Aftersales</a></li>
             </ul>
           </nav>
@@ -210,25 +211,30 @@
 
   const ButtonSection = ({ scrollToSection }) => (
     <div className="buttons-overlay">
-      <button 
-        onClick={() => scrollToSection('products')} 
-        aria-label="Our Products"
-      >
-        OUR PRODUCTS
-      </button>
-      <button 
-        onClick={() => scrollToSection('book')} 
-        aria-label="Book with the Experts"
-      >
-        BOOK WITH THE EXPERTS
-      </button>
-      <button 
-        onClick={() => scrollToSection('quote')} 
-        aria-label="Get Quote"
-      >
-        GET QUOTE
-      </button>
-    </div>
+  <button 
+    onClick={() => scrollToSection('products')} 
+    aria-label="Our Products"
+  >
+    OUR PRODUCTS
+  </button>
+
+  <Link to="/book-with-experts">
+    <button 
+      aria-label="Book with the Experts"
+    >
+      BOOK WITH THE EXPERTS
+    </button>
+  </Link>
+
+  <Link to="/get-quote">
+    <button 
+      aria-label="Get Quote"
+    >
+      GET QUOTE
+    </button>
+  </Link>
+</div>
+
   );
 
   export default Header;

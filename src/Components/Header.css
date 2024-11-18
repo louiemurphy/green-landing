@@ -53,8 +53,8 @@
     align-items: center;
     position: absolute; /* Absolute positioning to push it to the far left */
     left: 3rem; /* Adjust this value as needed */
-    bottom: 0.6rem; /* Pushes it to the bottom of the navbar */
-    padding-bottom: 0.3rem;
+    bottom: 0.5rem; /* Pushes it to the bottom of the navbar */
+    padding-bottom: 0.rem;
   }
   
   .logo-img {
@@ -69,8 +69,8 @@
     justify-content: center; /* Centers the navigation items */
     position: absolute;
     padding-bottom: 0rem;
-    bottom: 1.4rem;
-    right: 30rem;
+    bottom: 1.1rem;
+    right: 25rem;
     
   }
   
@@ -86,8 +86,6 @@
     
     
   }
-
-
 
   
 /* Navigation Items */
@@ -114,8 +112,8 @@
     cursor: pointer;
     color: white;
     position: absolute;
-    right: 6rem; /* Keeps it aligned on the right */
-    bottom: 0.6; /* Moves it to the bottom of the navbar */
+    right: 5rem; /* Keeps it aligned on the right */
+    bottom: 0.5; /* Moves it to the bottom of the navbar */
     padding-bottom: 0rem; /* Optional: Adds padding to space it from the bottom */
 }
 
@@ -171,7 +169,7 @@
 /* Hover effect for list items */
 .dropdown-content li a:hover {
     background-color: rgba(0, 128, 0, 0.2); /* Light green hover background */
-    color: #004d00; /* Darker green text on hover */
+    color: #196419; /* Darker green text on hover */
     padding-left: 10px; /* Slight indentation on hover */
     transform: translateX(3px); /* Slight push effect on hover */
 }

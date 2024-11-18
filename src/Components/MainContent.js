@@ -18,6 +18,8 @@ const MainContent = () => {
     <section className="main-content">
       <div className="brand-grid">
         {/* Solar Energy */}
+        
+<a href="https://www.greenergysolar.ph/" target="_blank" rel="noopener noreferrer">
         <div
           className="brand-item"
           style={{
@@ -37,7 +39,7 @@ const MainContent = () => {
             </p>
           </div>
         </div>
-
+        </a>
         {/* Green Energy Mobility */}
         <div
           className="brand-item"

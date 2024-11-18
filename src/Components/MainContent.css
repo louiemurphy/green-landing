@@ -11,6 +11,11 @@
   margin-bottom: 1.5rem;
 }
 
+.brand-item a {
+  text-decoration: none;
+}
+
+
 .main-content p {
   font-size: 1.2rem;
   color: #333;
@@ -58,7 +63,7 @@
 
 /* Greenergy Builders Logo */
 .brand-item img[alt="Green Energy Builders"] {
-  max-width: 150%; /* Set specific size for Green Energy Builders */
+  max-width: 100%; /* Set specific size for Green Energy Builders */
 }
 
 /* Greenergy Agritech Logo */
